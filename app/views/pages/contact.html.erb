@@ -1,0 +1,13 @@
+<h1>Contact Us</h1>
+
+<%= form_for :contact do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :message %>
+    <%= f.text_area :message %>
+  </p>
+  <%= f.submit %>
+<% end %>
